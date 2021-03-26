@@ -5,9 +5,9 @@ const {
 } = require('./prismic-configuration')
 const linkResolver = require('./src/utils/linkResolver')
 
-const reponame = process.env.PRISMIC_REPO_NAME || prismicRepo
-const apiKey = process.env.PRISMIC_API_KEY || accessToken
-const prismicReleaseID = process.env.PRISMIC_RELEASE_ID || releaseID
+const reponame = process.env.GATSBY_PRISMIC_REPO_NAME || prismicRepo
+const apiKey = process.env.GATSBY_PRISMIC_API_KEY || accessToken
+const prismicReleaseID = process.env.GATSBY_PRISMIC_RELEASE_ID || releaseID
 
 const blogHomeSchema = require('./custom_types/bloghome.json')
 const postSchema = require('./custom_types/post.json')
